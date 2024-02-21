@@ -1,0 +1,33 @@
+{% extends 'main/sample.html' %}
+{% load static%}
+
+{% block title %} Pyan Контакты {% endblock %}
+
+{% block content %}
+    <h1>Свяжитесь с нами при помощи одной из этих ссылок</h1>
+    <a class="logo" href="{% url 'home' %}">
+        <img src="{% static 'main/img/logo.png' %}"
+        style="width: 270px;"/>
+    </a>
+
+    <a class="teamlead" href="https://t.me/alvttt">
+        <img src="{% static 'main/img/tgicon.png' %}" class="tgicon" style="width: 100px;"/>
+        <div style="top:370px;">
+            TeamLead
+        </div>
+    </a>
+
+    <a class="group" href="https://vk.com/pyanprojects">
+        <img src="{% static 'main/img/vkicon.png' %}" class="vkicon" style="width: 100px;"/>
+        <div style="top:370px;">
+            Группа Pyan
+        </div>
+    </a>
+
+    <a class="mail" href="mailto:pyanproject@gmail.com">
+        <img src="{% static 'main/img/mailicon.png' %}" class="mailicon" style="width: 100px;"/>
+        <div style="top:370px;">
+            Почта Pyan
+        </div>
+    </a>
+{% endblock %}

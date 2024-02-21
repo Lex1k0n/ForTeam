@@ -1,0 +1,22 @@
+{% extends 'main/sample.html' %}
+{% load static%}
+
+{% block title %} Pyan Проекты {% endblock %}
+
+{% block content %}
+    <h2>Проекты команды Pyan</h2>
+    <a class="logo" href="{% url 'home' %}">
+        <img src="{% static 'main/img/logo.png' %}"
+        style="width: 270px;"/>
+    </a>
+
+    {% for project in projects %}
+        <div class="proj">
+            <a class="proj_href" href="{{ project.href }}">
+                <img src="{{ project.img.url }}" class="customicon2"/>
+                <p class="txt_href2">{{ project.name }}</p>
+            </a>
+            <p class="description2">{{ project.desc }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

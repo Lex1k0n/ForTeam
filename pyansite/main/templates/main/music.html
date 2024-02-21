@@ -1,0 +1,26 @@
+{% extends 'main/sample.html' %}
+{% load static%}
+
+{% block title %} Pyan Music {% endblock %}
+
+{% block content %}
+    <h1>PyanMusic</h1>
+    <a class="logo" href="{% url 'home' %}">
+        <img src="{% static 'main/img/logo.png' %}"
+        style="width: 270px;"/>
+    </a>
+
+    <a class="altmusic" href="https://t.me/alttt_universe">
+        <img src="{% static 'main/img/house.jpg' %}" class="customicon" style="width: 100px;"/>
+        <div style="top:370px;">
+            alttt.'s house
+        </div>
+    </a>
+
+    <a class="keusmusic" href="https://t.me/keusmusic">
+        <img src="{% static 'main/img/lxrd.jpg' %}" class="customicon" style="width: 100px;"/>
+        <div style="top:370px;">
+            LXRDKEUS
+        </div>
+    </a>
+{% endblock %}

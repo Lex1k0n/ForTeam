@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestDatabase</title>
+</head>
+<body>
+    <p>Это страница для работы с данными</p>
+    {% for elem in enter %}
+        <div>
+            <p>{{ elem.nickname }}: {{ elem.description }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>

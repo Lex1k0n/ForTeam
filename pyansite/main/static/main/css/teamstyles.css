@@ -1,0 +1,40 @@
+@font-face {
+   font-family: 'TextFont';
+   src: url("../fonts/txtfont.otf");
+}
+
+@font-face {
+   font-family: 'MainFont';
+   src: url("../fonts/mainfont.otf");
+}
+.member {
+    position: relative;
+    top: 50px;
+    font-family: TextFont;
+    font-color: black;
+}
+.member_href {
+    margin-left: 50px;
+    transition: all .2s ease;
+}
+.txt_href {
+    position: relative;
+    bottom: 10px;
+    width: 200px;
+    text-align: center;
+}
+.description {
+    text-align: right;
+    position: relative;
+    bottom: 160px;
+    margin-right: 70px;
+    margin-left: 300px;
+}
+.customicon {
+    width: 100px;
+    border: 3px solid black;
+    border-radius: 50%;
+}
+.member_href:hover {
+    transform: scale(1.1);
+}

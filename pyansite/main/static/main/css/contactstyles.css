@@ -1,0 +1,51 @@
+@font-face {
+   font-family: 'TextFont';
+   src: url("../fonts/txtfont.otf");
+}
+
+.teamlead {
+    position: absolute;
+    left: 250px;
+    top: 300px;
+    font-family: TextFont;
+    font-color: black;
+    text-align: center;
+}
+
+.altmusic {
+    position: absolute;
+    left: 350px;
+    top: 300px;
+    font-family: TextFont;
+    font-color: black;
+    text-align: center;
+}
+
+.keusmusic {
+    position: absolute;
+    left: 850px;
+    top: 300px;
+    font-family: TextFont;
+    font-color: black;
+    text-align: center;
+}
+
+.group {
+    position: absolute;
+    left: 600px;
+    top: 300px;
+    font-family: TextFont;
+    font-color: black;
+    text-align: center;
+}
+
+.mail {
+    position: absolute;
+    left: 950px;
+    top: 300px;
+    font-family: TextFont;
+    text-align: center;
+}
+
+.tgicon {
+}

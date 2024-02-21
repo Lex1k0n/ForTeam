@@ -1,0 +1,22 @@
+{% extends 'main/sample.html' %}
+{% load static%}
+
+{% block title %} Команда Pyan {% endblock %}
+
+{% block content %}
+    <h1>Команда Pyan Projects</h1>
+    <a class="logo" href="{% url 'home' %}">
+        <img src="{% static 'main/img/logo.png' %}"
+        style="width: 270px;"/>
+    </a>
+
+    {% for member in team %}
+        <div class="member">
+            <a class="member_href" href="{{ member.href }}">
+                <img src="{{ member.img.url }}" class="customicon"/>
+                <p class="txt_href">{{ member.nickname }}</p>
+            </a>
+            <p class="description">{{ member.desc }} <br>Число проектов: {{ member.count }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}

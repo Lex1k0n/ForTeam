@@ -1,0 +1,52 @@
+{% extends 'main/sample.html' %}
+{% load static%}
+
+{% block title %} Pyan Projects {% endblock %}
+
+{% block content %}
+    <h1>Добро пожаловать на <br>сайт Pyan Projects!</h1>
+    <div class="logo">
+        <img src="{% static 'main/img/logo.png' %}"
+        style="width: 270px;"/>
+    </div>
+
+    {% if user.is_authenticated %}
+
+    {% endif %}
+
+    <a class="projects" href="{% url 'projects' %}">
+        <img class="projects-img" src="{% static 'main/img/projects.jpeg' %}">
+        <div style="top:390px;">
+            Проекты
+        </div>
+    </a>
+
+    <a class="contacts" href="{% url 'contacts' %}">
+        <img class="contacts-img" src="{% static 'main/img/contacts.png' %}">
+        <div style="top:390px;">
+            Контакты
+        </div>
+    </a>
+
+    <a class="team" href="{% url 'team' %}">
+        <img class="team-img" src="{% static 'main/img/team.jpg' %}">
+        <div style="top:390px;">
+            Команда
+        </div>
+    </a>
+
+    <a class="music" href="{% url 'music' %}">
+        <img class="music-img" src="{% static 'main/img/music.jpg' %}">
+        <div style="top:680px;">
+            Музыка
+        </div>
+    </a>
+
+    <a class="work" href="{% url 'work' %}">
+        <img class="work-img" src="{% static 'main/img/work.jpg' %}">
+        <div style="top:680px;">
+            Работа
+        </div>
+    </a>
+
+{% endblock %}

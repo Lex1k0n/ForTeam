@@ -1,0 +1,14 @@
+{% extends 'main/sample.html' %}
+{% load static%}
+
+{% block title %} Pyan Работодатель {% endblock %}
+
+{% block content %}
+    <h1>Работа в Pyan</h1>
+    <a class="logo" href="{% url 'home' %}">
+        <img src="{% static 'main/img/logo.png' %}"
+        style="width: 270px;"/>
+    </a>
+
+    <a href="https://t.me/alvttt" id="work">По поводу работы писать сюда</a>
+{% endblock %}
